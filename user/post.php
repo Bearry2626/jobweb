@@ -50,7 +50,8 @@ if (isset($_GET['id'])) {
                             <h3 class="mb-1"><?php echo $row['username']; ?></h3>
                             <p class="mb-2 pb-1" style="color: #2b2a2a;"><?php echo $row['type_name']; ?></p>
                             <p class="mb-2 pb-1" style="color: #2b2a2a;">
-                                <a class="register-link" href="profile_p.php?id=<?php echo $row['user_id']; ?>">ดูรายละเอียดบริษัท</a>
+                                <a class="register-link"
+                                    href="profile_p.php?id=<?php echo $row['user_id']; ?>">ดูรายละเอียดบริษัท</a>
                             </p>
                         </div>
                     </div>
@@ -119,6 +120,19 @@ if (isset($_GET['id'])) {
                 <p>อีเมล : <?php echo $row['email']; ?></p>
                 <p>เบอร์โทร : <?php echo $row['number']; ?></p>
             </div>
+            <div class="">
+                <div class="mb-6">
+                    <label for="" class="form-label">เลือกวิธีสมัครงาน</label>
+                </div>
+                <div class="mt-6">
+                    <a href="upfile.php" type="button" class="long btn btn-lg btn-primary custom-btn"> <i
+                            class="bi bi-file-earmark-arrow-up-fill"></i> ส่งไฟล์ประวัติ</a>
+                </div>
+                <div class="mb-6">
+                <button type="button" class="long btn btn-lg btn-primary custom-btn"> <i class="bi bi-envelope-fill"></i> ส่งอีเมล</button>
+
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -139,3 +153,12 @@ if (isset($_GET['id'])) {
 // Close the database connection
 $conn->close();
 ?>
+
+<style>
+.long {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+    /* ระยะห่างด้านล่างของปุ่ม */
+}
+</style>

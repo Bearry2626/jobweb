@@ -21,7 +21,7 @@ require_once '../config/db.php';
                     </div>
                 </div>
                 <div class="d-grid gap-2 col-6 mx-auto mt-5">
-                    <button id="checkNumberBtn" class="btn btn-primary custom-btn" name="submit" type="button">ยืนยันเบอร์โทร</button>
+                    <button id="checkNumberBtn" class="btn btn-primary custom-btn" name="submit" type="button">ยืนยันอีเมล</button>
                 </div>
             </form>
             <p class="mt-5 text-center">กลับเพื่อ <a class="register-link" href="login.php">เข้าสู่ระบบ</a> JOBJAB </p>

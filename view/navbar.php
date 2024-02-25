@@ -24,8 +24,13 @@ include '../control/index.php';
                             <a class="nav-link" href="#"></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../user/main.php">งานที่ประกาศทั้งหมด</a>
+                            <a class="nav-link " href="../user/main.php">งานที่ประกาศทั้งหมด</a>
                         </li>
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../user/profile.php">การสมัคร</a>
+                            </li>
+                        </ul>
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link" href="../user/profile.php">โปรไฟล์</a>
@@ -57,10 +62,10 @@ include '../control/index.php';
                 <?php else: ?>
                     <!-- เมนูสำหรับผู้ที่ยังไม่ได้เข้าสู่ระบบ -->
                     <li class="nav-item line">
-                        <a class="nav-link active" aria-current="page" href="../view/login.php">เข้าสู่ระบบ</a>
+                        <a class="nav-link active" aria-current="page"  href="../view/login.php">เข้าสู่ระบบ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">สำหรับบริษัท</a>
+                        <a class="nav-link" href="../view/register.php">ลงทะเบียนสำหรับบริษัท</a>
                     </li>
                 <?php endif; ?>
             </ul>
